@@ -1,4 +1,4 @@
-FROM ghcr.io/IO-X-OI/hajimi:latest
+FROM ghcr.io/ioxoill/hajimi:latest
 
 EXPOSE 7860
 
