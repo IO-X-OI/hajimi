@@ -1,11 +1,4 @@
-FROM python:3.12-slim
-
-WORKDIR /app
-
-COPY . .
-
-RUN pip install uv
-RUN uv pip install --system --no-cache-dir -r requirements.txt
+FROM ghcr.io/IO-X-OI/hajimi:latest
 
 EXPOSE 7860
 
