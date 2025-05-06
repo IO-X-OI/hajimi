@@ -1,4 +1,11 @@
-FROM ghcr.io/ioxoill/hajimi:latest
+FROM python:3.12-slim
+
+WORKDIR /app
+
+COPY . .
+
+RUN pip install uv
+RUN uv pip install --system --no-cache-dir -r requirements.txt
 
 EXPOSE 7860
 
